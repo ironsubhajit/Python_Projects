@@ -6,7 +6,7 @@ Project Name: Simple_Number_guessing_Game
 import random as rand
 l=int(input("\n1.New Game\n0.Quit\n"))
 while l==1:
-    print("\nHello Sir,Wellcome to guessing a Number.\n\nLets see how much strong your gussing skills are :D\nRules are so simple:\nyou have max of 4 chances to guess a no. which is between 0 to 9\n")
+    print("\nHello Sir,Wellcome to guessing a Number.\n\nLets see how strong your gussing skills are :D\nRules are so simple:\nyou have max of 4 chances to guess a no. which is between 0 to 9\n")
     guess = rand.randint(0,9)
     val=int(input("\nHow many time you want to Guess(max is 4 times): "))
     if val<=4:
