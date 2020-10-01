@@ -17,6 +17,8 @@ def game_level(level=4):
     elif level == 1:
         val = int(input("\nHow many time you want to Guess(max is 5 times): "))
 
+    return val
+
 l=int(input("\n1.New Game\n0.Quit\n"))
 while l==1:
     print("\nHello Sir,Welcome to guessing a Number."
@@ -24,7 +26,8 @@ while l==1:
           "\nRules are so simple:"
           "\nyou have max of 4 chances to guess a no. which is between 0 to 9\n")
     guess = rand.randint(0,9)
-    val=int(input("\nHow many time you want to Guess(max is 4 times): "))
+    level = int(input("Enter Game Level(max is 4): "))
+    val = game_level(level)
     if val<=4:
         print("\nOK all set,Lets start :D\n")
         i=1
